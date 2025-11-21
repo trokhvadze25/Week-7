@@ -1,0 +1,18 @@
+#factorial function
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
+
+#Manually Obfuscated Code Renamed factorial = f, n = a
+def f(a):
+    if a == 0:
+        return 1
+    return a * f(a - 1)
+
+print(f(5))
+
+#Automatically Obfuscated Code by https://dthung1602.github.io/pyobfusinator/
+b='Ë͉̝̝͔͕͎͔͕͎͉͎͔́͆̀͆̈́̉ͯ̀̀̀̀͆̀́̀̀̐ͯ̀̀̀̀̀̀̀̀͒͒̀̑ͯ̀̀̀̀͒͒̀́̀̊̀͆̈́̀̍̀̑̉ͯͯ͐͒̈͆̈̉̉̚̚̕ͅͅͅ'.encode();exec(''.join(chr(((h<<6&64|c&63)+22)%133+10)for h,c in zip(b[1::2],b[2::2])))
